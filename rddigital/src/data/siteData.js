@@ -73,25 +73,28 @@ export const products = [
     {
         id: 'optiloom',
         title: 'Optiloom',
-        image: '/assets/images/001_4f50c54833.webp',
+        logo: '/assets/images/001_4f50c54833.webp',
+        image: '/assets/images/f35e45d85c685a4d844acc27b62003e8c35e06b6_1_a82fcc2c81.webp',
         description:
-            'Run AB tests directly on your live site. Track results. Make confident changes backed by data.',
+            'Run AB tests directly on your live site. Track results.\nMake confident changes backed by data.',
         link: '/portfolio/optiloom',
     },
     {
         id: 'observe-iq',
         title: 'Observe IQ',
-        image: '/assets/images/002_f652239bb9.webp',
+        logo: '/assets/images/002_f652239bb9.webp',
+        image: '/assets/images/f35e45d85c685a4d844acc27b62003e8c35e06b6_1_a82fcc2c81.webp',
         description:
-            'Track any webpage for changes and get instant alerts. Whether it\'s a price drop, job posting, or competitor update — Observe IQ keeps you informed in real time.',
+            'Track any webpage for changes and get instant alerts.\nWhether it\'s a price drop, job posting, or competitor\nupdate — Observe IQ keeps you informed in real time,\nso you never miss a beat.',
         link: '/portfolio/observe-iq',
     },
     {
         id: 'ragger',
         title: 'Ragger',
-        image: '/assets/images/Ragger_S_Vg_22ddd33dda.webp',
+        logo: '/assets/images/Ragger_S_Vg_22ddd33dda.webp',
+        image: '/assets/images/f35e45d85c685a4d844acc27b62003e8c35e06b6_1_a82fcc2c81.webp',
         description:
-            'AI-powered conversational commerce assistant that integrates with existing APIs to deliver live quotes, real-time prices, and instant bookings.',
+            'AI-powered conversational commerce assistant that\nintegrates with existing APIs to deliver live quotes,\nreal-time prices, and instant bookings - transforming\nhow customers interact with businesses across travel,\nreal estate, fitness, and more.',
         link: '/portfolio/ragger',
     },
 ];

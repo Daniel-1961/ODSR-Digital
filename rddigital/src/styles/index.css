@@ -1,5 +1,6 @@
-@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@import "tailwindcss";
 
 /* ============================
    RD Digital — Global Styles
@@ -23,7 +24,7 @@
   /* Border Radius */
   --radius-pill: 9999px;
   --radius-card: 1rem;
-  --radius-btn: 9999px;
+  --radius-btn: 6px;
 }
 
 /* Base Resets */
