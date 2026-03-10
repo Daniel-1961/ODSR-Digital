@@ -1,10 +1,16 @@
+import Navbar from "../components/layout/Navbar";
+import Hero from "../components/layout/Hero";
+import AboutStory from "../components/layout/AboutStory";
+import ServicesSection from "../components/sections/Services";
 export default function About() {
-    return (
-        <div className="pt-28 pb-20 min-h-screen">
-            <div className="max-w-7xl mx-auto px-6 text-center">
-                <h1 className="text-4xl font-bold text-heading-dark mb-4">About Us</h1>
-                <p className="text-body-text text-lg">Coming soon...</p>
-            </div>
-        </div>
-    );
+  return (
+    <div className="app-container">
+      <Navbar />
+      <main>
+        <Hero />
+        <AboutStory />
+        <ServicesSection />
+      </main>
+    </div>
+  );
 }

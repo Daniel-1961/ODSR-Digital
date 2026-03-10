@@ -1,5 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 /* ============================
    RD Digital — Global Styles
@@ -7,18 +7,19 @@
 
 @theme {
   /* Colors */
-  --color-primary-dark: #0A283A;
-  --color-primary-darker: #061C3D;
-  --color-primary-light: #F1F7FA;
-  --color-white: #FFFFFF;
-  --color-heading-dark: #1F1F2B;
-  --color-body-text: #5D5D79;
-  --color-accent-blue: #127EBA;
-  --color-accent-purple: #B37FEB;
-  --color-border: #DFE0EC;
+  --color-primary-dark: #0a283a;
+  --color-primary-darker: #061c3d;
+  --color-primary-light: #f1f7fa;
+  --color-white: #ffffff;
+  --color-heading-dark: #1f1f2b;
+  --color-body-text: #5d5d79;
+  --color-accent-blue: #127eba;
+  --color-accent-purple: #b37feb;
+  --color-border: #dfe0ec;
+  --color-footer: #061c3d;
 
   /* Fonts */
-  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
 
   /* Border Radius */
   --radius-pill: 9999px;
@@ -71,17 +72,29 @@
 /* Gradient utility */
 @layer utilities {
   .gradient-text {
-    background: linear-gradient(to right, var(--color-accent-blue), var(--color-accent-purple));
+    background: linear-gradient(
+      to right,
+      var(--color-accent-blue),
+      var(--color-accent-purple)
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
   .gradient-bg {
-    background: linear-gradient(to right, var(--color-accent-blue), var(--color-accent-purple));
+    background: linear-gradient(
+      to right,
+      var(--color-accent-blue),
+      var(--color-accent-purple)
+    );
   }
 
   .gradient-bg-hover:hover {
-    background: linear-gradient(to right, var(--color-accent-purple), var(--color-accent-blue));
+    background: linear-gradient(
+      to right,
+      var(--color-accent-purple),
+      var(--color-accent-blue)
+    );
   }
 }
