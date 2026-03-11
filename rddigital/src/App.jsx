@@ -7,6 +7,7 @@ import MarketingAnalytics from './pages/MarketingAnalytics';
 import Portfolio from './pages/Portfolio';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
+import AIPoweredWorkflows from './pages/AIPoweredWorkflows';
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
           <Route path="about" element={<About />} />
           <Route path="services" element={<Services />} />
           <Route path="services/marketing-analytics" element={<MarketingAnalytics />} />
+          <Route path="services/aI-powered-workflows" element={<AIPoweredWorkflows />} />
           <Route path="services/:slug" element={<Services />} />
           <Route path="portfolio" element={<Portfolio />} />
           <Route path="blog" element={<Blog />} />
