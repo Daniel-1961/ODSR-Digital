@@ -1,91 +1,58 @@
 import { Link } from "react-router-dom";
-import Button from "../common/Button";
-import { services } from "../../data/siteData";
 
-const serviceImages = {
-  "web-app-development": "/assets/images/wordpress_5bebdedc02.webp",
-  "umbraco-development": "/assets/images/Time_tracking_144a73f515.webp",
-  azure: "/assets/images/Clean up space.svg",
-  "customer-acquisition": "/assets/images/AI_Chat_3_a7a2465bfa.webp",
-};
-
-export default function ServicesSection() {
+export default function ServicesSection({ services, description, serviceImages }) {
   return (
-    <section className="py-20 md:py-28 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
-        {/* Header row */}
-        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-14">
-          <div>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-heading-dark">
+    <section className="bg-white px-4 pt-8 pb-12 lg:p-16 lg:px-10 mx-auto xl:container 3xl:max-w-[50%]">
+      <div className="relative mx-auto lg:top-0 z-10 text-left lg:text-left">
+        {/* Header */}
+        <div className="flex max-sm:flex-col max-sm:gap-5 gap-2 justify-between items-end mb-8">
+          <div className="flex flex-row justify-between items-center text-center lg:text-start w-full lg:py-2">
+            <h2 className="font-semibold text-2xl lg:text-5xl leading-[120%] capitalize text-[#081F2D]">
               What we do
             </h2>
-          </div>
-          <Button
-            to="/services"
-            variant="ghost"
-            size="sm"
-            className="mt-4 sm:mt-0 text-accent-blue font-semibold"
-          >
-            View all
-            <svg
-              className="w-4 h-4"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
+
+            <Link
+              to="/contact"
+              className="group relative w-44 h-12 lg:h-14 flex items-center justify-center gap-2 rounded-[10px] bg-[#175070] bg-[linear-gradient(318.96deg,#B37FEB_-1.9%,rgba(210,174,245,0)_17.34%,#EFDBFF_87.36%)] bg-blend-soft-light shadow-[0px_0px_16px_0px_#1b496552,0px_2px_2px_0px_#000000] py-2 lg:py-4 px-4 text-white text-lg font-medium transition-all lg:block"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M17 8l4 4m0 0l-4 4m4-4H3"
-              />
-            </svg>
-          </Button>
+              Scale Faster
+            </Link>
+          </div>
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {services.map((service) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-8 gap-5">
+          {services?.map((service, index) => (
             <div
-              key={service.id}
-              className="group relative bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+              key={index}
+              className="rounded-3xl border border-black/10 flex flex-col p-4 bg-white"
             >
-              {/* Mock dashboard image */}
-              <div className="w-full h-44 bg-gray-50 rounded-xl mb-5 overflow-hidden flex items-end justify-center px-4 pt-4">
-                <img
-                  src={serviceImages[service.id]}
-                  alt={service.title}
-                  className="w-full h-auto object-cover object-top rounded-t-lg shadow-sm border border-gray-100"
-                />
+              <img
+                loading="lazy"
+                src={serviceImages[service.id]}
+                alt={service.title}
+                className="h-full w-full max-h-56 object-cover object-top rounded-[1.25rem]"
+              />
+
+              <div className="flex flex-col justify-between flex-1 gap-4 mt-4">
+                <div className="flex flex-col gap-2">
+                  <h3 className="font-medium text-xl text-[#2b3c45] leading-[120%]">
+                    {service.title}
+                  </h3>
+                  <p className="text-[#041925] leading-[150%] text-sm">
+                    {service.description || description || ""}
+                  </p>
+                </div>
+
+                {service.link && (
+                  <Link
+                    to={service.link}
+                    className="group relative h-10 flex items-center justify-center gap-2.5 rounded-[10px] border-[1.4px] border-solid border-transparent bg-[#175070] bg-[linear-gradient(318.96deg,#B37FEB_-1.9%,rgba(210,174,245,0)_17.34%,#EFDBFF_87.36%)] bg-blend-soft-light shadow-[0px_0px_16px_0px_#1b496552,0px_2px_2px_0px_#000000] py-2 text-white text-lg font-medium transition-all capitalize hover:brightness-110"
+                  >
+                    Read more
+                  </Link>
+                )}
               </div>
-              {/* Content */}
-              <h3 className="text-lg font-bold text-heading-dark mb-3 leading-snug">
-                {service.title}
-              </h3>
-
-              <p className="text-sm text-body-text leading-relaxed mb-5">
-                {service.description}
-              </p>
-
-              <Link
-                to={service.link}
-                className="inline-flex items-center gap-2 text-sm font-semibold bg-indigo-600/70 text-white px-4 py-2 rounded-lg hover:opacity-90 transition-opacity duration-200"
-              >
-                Read More
-                <svg
-                  className="w-3.5 h-3.5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </Link>
             </div>
           ))}
         </div>
