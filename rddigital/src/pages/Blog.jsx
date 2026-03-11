@@ -223,11 +223,10 @@ export default function Blog() {
               <button
                 key={cat}
                 onClick={() => handleCategoryChange(cat)}
-                className={`text-sm py-2 px-4 rounded-md font-medium whitespace-nowrap capitalize transition-all ${
-                  activeCategory === cat
-                    ? "bg-primary text-white"
-                    : "border-2 text-gray-700 hover:bg-gray-100"
-                }`}
+                className={`text-sm py-2 px-4 rounded-md font-medium whitespace-nowrap capitalize transition-all ${activeCategory === cat
+                  ? "bg-primary text-white"
+                  : "border-2 text-gray-700 hover:bg-gray-100"
+                  }`}
               >
                 {cat}
               </button>
@@ -280,9 +279,8 @@ export default function Blog() {
             <button
               onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
               disabled={currentPage === 1}
-              className={`w-9 h-9 rounded-full flex items-center justify-center bg-primary text-white transition-opacity ${
-                currentPage === 1 ? "opacity-40 cursor-not-allowed" : "hover:opacity-80"
-              }`}
+              className={`w-9 h-9 rounded-full flex items-center justify-center bg-primary text-white transition-opacity ${currentPage === 1 ? "opacity-40 cursor-not-allowed" : "hover:opacity-80"
+                }`}
             >
               <svg width="8" height="13" viewBox="0 0 8 13" fill="none">
                 <path d="M0.96967 7.1202C0.676777 6.82731 0.676777 6.35243 0.96967 6.05954L5.74264 1.28657C6.03553 0.993671 6.51041 0.993671 6.8033 1.28657C7.09619 1.57946 7.09619 2.05434 6.8033 2.34723L2.56066 6.58987L6.8033 10.8325C7.09619 11.1254 7.09619 11.6003 6.8033 11.8932C6.51041 12.1861 6.03553 12.1861 5.74264 11.8932L0.96967 7.1202ZM2.5 7.33987H1.5V5.83987H2.5V7.33987Z" fill="currentColor" />
@@ -294,11 +292,10 @@ export default function Blog() {
               <button
                 key={page}
                 onClick={() => setCurrentPage(page)}
-                className={`w-10 h-10 rounded-full flex items-center justify-center font-medium transition-all ${
-                  currentPage === page
-                    ? "bg-primary text-white"
-                    : "bg-gray-200 text-gray-600 hover:bg-gray-300"
-                }`}
+                className={`w-10 h-10 rounded-full flex items-center justify-center font-medium transition-all ${currentPage === page
+                  ? "bg-primary text-white"
+                  : "bg-gray-200 text-gray-600 hover:bg-gray-300"
+                  }`}
               >
                 {page}
               </button>
@@ -308,9 +305,8 @@ export default function Blog() {
             <button
               onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
               disabled={currentPage === totalPages}
-              className={`w-9 h-9 rounded-full flex items-center justify-center bg-primary text-white transition-opacity ${
-                currentPage === totalPages ? "opacity-40 cursor-not-allowed" : "hover:opacity-80"
-              }`}
+              className={`w-9 h-9 rounded-full flex items-center justify-center bg-primary text-white transition-opacity ${currentPage === totalPages ? "opacity-40 cursor-not-allowed" : "hover:opacity-80"
+                }`}
             >
               <svg width="8" height="13" viewBox="0 0 8 13" fill="none">
                 <path d="M7.03035 7.1202C7.32324 6.82731 7.32324 6.35243 7.03035 6.05954L2.25738 1.28657C1.96449 0.993671 1.48962 0.993671 1.19672 1.28657C0.903828 1.57946 0.903828 2.05434 1.19672 2.34723L5.43936 6.58987L1.19672 10.8325C0.903827 11.1254 0.903827 11.6003 1.19672 11.8932C1.48961 12.1861 1.96449 12.1861 2.25738 11.8932L7.03035 7.1202ZM5.50002 7.33987H6.50002V5.83987H5.50002V7.33987Z" fill="currentColor" />
