@@ -60,7 +60,7 @@ export default function PortfolioFAQ() {
                 Got Questions? Answered
               </h2>
               <p className="text-[#3C3C5E] text-center text-sm leading-[150%] tracking-[-1%] lg:text-[0.9375rem] font-normal max-w-sm">
-                Find quick answers to common queries about Websoft features, pricing, and support.
+                Find quick answers to common queries about RD Digital features, pricing, and support.
               </p>
             </div>
             

@@ -8,7 +8,7 @@ export default function PortfolioWhyRD() {
                     <img loading="lazy" src="https://rd-cms.do.recognisedesign.com/uploads/why_rd_2_1c7bf0a4ec.webp" alt="Want to reduce time spent chasing fixes?" className="rounded-xl w-80 lg:w-[26rem] object-cover" />
                     <div>
                         <h2 className="font-semibold text-start text-2xl lg:text-5xl leading-[120%] capitalize text-[#081F2D] mb-4 lg:mb-10">
-                            Why RD Digtal?
+                            Why RD Digital?
                         </h2>
                         <p className="text-[#1F1F2B] text-start leading-none mb-1 lg:text-[2rem] text-lg font-normal h-10">
                             Trusted by digital leaders
