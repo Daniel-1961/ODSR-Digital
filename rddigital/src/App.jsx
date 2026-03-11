@@ -6,6 +6,7 @@ import Services from './pages/Services';
 import WebAndAppDevelopment from './pages/WebAndAppDevelopment';
 import AzureHosting from './pages/AzureHosting';
 import CypressTesting from './pages/CypressTesting';
+import UmbracoDevelopment from './pages/UmbracoDevelopment';
 import MarketingAnalytics from './pages/MarketingAnalytics';
 import Portfolio from './pages/Portfolio';
 import Blog from './pages/Blog';
@@ -24,6 +25,7 @@ export default function App() {
           <Route path="services/web-app-development" element={<WebAndAppDevelopment />} />
           <Route path="services/azure" element={<AzureHosting />} />
           <Route path="services/automated-testing-with-cypress" element={<CypressTesting />} />
+=========
           <Route path="services/marketing-analytics" element={<MarketingAnalytics />} />
           <Route path="services/aI-powered-workflows" element={<AIPoweredWorkflows />} />
           <Route path="services/customer-acquisition-journeys" element={<CustomerAcquisitionJourneys />} />
