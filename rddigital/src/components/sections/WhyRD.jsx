@@ -28,9 +28,9 @@ export default function WhyRD() {
 
                         {/* Benefits list */}
                         <ul className="space-y-4 mb-10">
-                            {benefits.map((benefit, i) => (
-                                <li key={i} className="flex items-center gap-3">
-                                    <div className="w-6 h-6 rounded-full gradient-bg flex items-center justify-center shrink-0">
+                            {benefits.map((benefit, idx) => (
+                                <li key={idx} className="flex items-start gap-4">
+                                    <div className="w-6 h-6 rounded-full bg-primary-dark flex items-center justify-center shrink-0">
                                         <svg className="w-3.5 h-3.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                                         </svg>

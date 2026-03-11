@@ -2,11 +2,11 @@ import { Link } from 'react-router-dom';
 
 const variants = {
   primary:
-    'bg-gradient-to-r from-[#2a6d8c] to-[#041925] text-white hover:opacity-90 shadow-lg shadow-[#041925]/20',
+    'bg-primary-dark text-white hover:bg-primary-darker shadow-lg shadow-primary-dark/20',
   outline:
-    'bg-transparent border-2 border-[#127EBA] text-[#127EBA] hover:bg-[#127EBA]/5',
+    'bg-transparent border-2 border-primary-dark text-primary-dark hover:bg-primary-dark/5',
   ghost:
-    'bg-transparent text-[#127EBA] hover:bg-[#127EBA]/5',
+    'bg-transparent text-primary-dark hover:bg-primary-dark/5',
 };
 
 const sizes = {

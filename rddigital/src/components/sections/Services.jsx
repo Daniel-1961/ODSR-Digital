@@ -52,15 +52,16 @@ export default function ServicesSection() {
                                 {service.description}
                             </p>
 
-                            <Link
+                            <Button
                                 to={service.link}
-                                className="inline-flex items-center gap-2 text-sm font-semibold gradient-bg text-white px-4 py-2 rounded-lg hover:opacity-90 transition-opacity duration-200"
+                                size="sm"
+                                className="self-start mt-2"
                             >
                                 Read More
-                                <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <svg className="w-3.5 h-3.5 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                                 </svg>
-                            </Link>
+                            </Button>
                         </div>
                     ))}
                 </div>

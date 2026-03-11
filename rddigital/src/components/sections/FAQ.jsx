@@ -78,7 +78,7 @@ function FAQItem({ faq, isOpen, onClick }) {
                     {faq.question}
                 </span>
                 <div
-                    className={`w-7 h-7 rounded-full flex items-center justify-center shrink-0 transition-all duration-300 ${isOpen ? 'gradient-bg rotate-45' : 'bg-gray-100'
+                    className={`w-7 h-7 rounded-full flex items-center justify-center shrink-0 transition-all duration-300 ${isOpen ? 'bg-primary-dark rotate-45' : 'bg-gray-100'
                         }`}
                 >
                     <svg
