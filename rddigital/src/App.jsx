@@ -3,14 +3,11 @@ import Layout from './components/layout/Layout';
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
-<<<<<<< HEAD
 import WebAndAppDevelopment from './pages/WebAndAppDevelopment';
 import AzureHosting from './pages/AzureHosting';
 import CypressTesting from './pages/CypressTesting';
 import UmbracoDevelopment from './pages/UmbracoDevelopment';
-=======
 import MarketingAnalytics from './pages/MarketingAnalytics';
->>>>>>> d190ce31bd675a83f709b844e3314df2384e7b68
 import Portfolio from './pages/Portfolio';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
@@ -25,16 +22,13 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="services" element={<Services />} />
-<<<<<<< HEAD
           <Route path="services/web-app-development" element={<WebAndAppDevelopment />} />
           <Route path="services/azure" element={<AzureHosting />} />
           <Route path="services/automated-testing-with-cypress" element={<CypressTesting />} />
           <Route path="services/Umbraco-Website-Development" element={<UmbracoDevelopment />} />
-=======
           <Route path="services/marketing-analytics" element={<MarketingAnalytics />} />
           <Route path="services/aI-powered-workflows" element={<AIPoweredWorkflows />} />
           <Route path="services/customer-acquisition-journeys" element={<CustomerAcquisitionJourneys />} />
->>>>>>> d190ce31bd675a83f709b844e3314df2384e7b68
           <Route path="services/:slug" element={<Services />} />
           <Route path="portfolio" element={<Portfolio />} />
           <Route path="blog" element={<Blog />} />
