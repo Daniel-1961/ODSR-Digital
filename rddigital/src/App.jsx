@@ -25,7 +25,7 @@ export default function App() {
           <Route path="services/web-app-development" element={<WebAndAppDevelopment />} />
           <Route path="services/azure" element={<AzureHosting />} />
           <Route path="services/automated-testing-with-cypress" element={<CypressTesting />} />
-=========
+          <Route path="services/Umbraco-Website-Development" element={<UmbracoDevelopment />} />
           <Route path="services/marketing-analytics" element={<MarketingAnalytics />} />
           <Route path="services/aI-powered-workflows" element={<AIPoweredWorkflows />} />
           <Route path="services/customer-acquisition-journeys" element={<CustomerAcquisitionJourneys />} />
