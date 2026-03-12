@@ -34,7 +34,7 @@ export default function PortfolioTestimonials() {
     <div className="relative mx-auto lg:top-0 z-10 text-left lg:text-left text-white px-0 pt-16 lg:py-16 bg-[#F1F7FA] overflow-hidden">
       <div className="flex flex-col items-start mx-auto xl:container 3xl:max-w-[50%]">
         <div className="flex items-center sm:justify-center gap-2 text-black mx-auto lg:mx-0 px-4 lg:px-10">
-          <img loading="lazy" src="/images/google.webp" alt="Google icon" className="h-full w-auto" />
+          <img loading="lazy" src="/assets/images/google.webp" alt="Google icon" className="h-full w-auto" />
           <span className="flex flex-col items-start gap-[1px]">
             <span className="font-bold text-xs text-current/90">Google Rating</span>
             <span className="flex text-dark-orange items-center gap-0 font-bold text-lg text-[#F59E0B]">
