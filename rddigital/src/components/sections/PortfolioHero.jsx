@@ -12,7 +12,7 @@ export default function PortfolioHero() {
     [mask-repeat:no-repeat] [mask-size:100%_100%]" title="" />
                 </div>
             }
-            innerContainerClass="relative w-full xl:container 3xl:max-w-[50%] mx-auto lg:top-0 z-20 text-left lg:text-left text-[#042537]"
+            innerContainerClass="relative w-full xl:container 3xl:max-w-[50%] mx-auto lg:top-0 z-20 text-left lg:text-left text-[#042537] lg:mt-24"
             gridClass=""
             leftContentClass="text-white text-center md:text-left items-center md:items-start flex flex-col gap-4 w-full landscape:max-w-full lg:landscape:max-w-[44rem] px-4 lg:px-14"
             pill={

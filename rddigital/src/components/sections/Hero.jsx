@@ -32,7 +32,7 @@ const homePartnerLogos = [
 
 export default function Hero({
     containerClass = "relative h-fit flex items-center justify-center overflow-hidden bg-primary",
-    innerContainerClass = "relative px-4 mt-[5.25rem] lg:mt-0 py-[4.5rem] xl:p-14 mx-auto lg:top-0 lg:px-10 xl:container 3xl:max-w-[50%] text-left lg:text-left text-white w-full",
+    innerContainerClass = "relative px-4 mt-[5.25rem] lg:mt-24 py-[4.5rem] xl:p-14 mx-auto lg:top-0 lg:px-10 xl:container 3xl:max-w-[50%] text-left lg:text-left text-white w-full",
     gridClass = "text-center items-center flex justify-between max-lg:flex-col lg:w-full gap-4 lg:gap-0 xl:gap-20",
     leftContentClass = "text-white text-center md:text-left flex flex-col gap-4 w-full landscape:max-w-full lg:landscape:max-w-screen-sm lg:w-1/2",
     bgContent = null,
