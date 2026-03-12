@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export const GoogleRating = () => (
     <div className="flex items-center sm:justify-center gap-2 text-white lg:flex">
-        <img loading="lazy" src="/images/google.webp" alt="Google icon" className="h-[2rem] w-auto lg:h-full lg:w-auto" />
+        <img loading="lazy" src="/assets/images/google.webp" alt="Google icon" className="h-[2rem] w-auto lg:h-full lg:w-auto" />
         <span className="flex flex-col items-start gap-[1px]">
             <span className="font-bold text-[10px] lg:text-xs text-current/90 leading-none lg:leading-normal">Google Rating</span>
             <span className="flex text-dark-orange items-center gap-0 font-bold text-base lg:text-lg text-[#F59E0B] leading-none">

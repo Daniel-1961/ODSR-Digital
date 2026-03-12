@@ -137,7 +137,7 @@ export default function Footer() {
 
         {/* Google Rating */}
         <div className="flex items-center gap-2 mt-2">
-          <img loading="lazy" src="/images/google.webp" alt="Google icon" className="h-8 w-auto" />
+          <img loading="lazy" src="/assets/images/google.webp" alt="Google icon" className="h-8 w-auto" />
           <span className="flex flex-col items-start gap-[1px]">
             <span className="font-bold text-xs text-white/90">Google Rating</span>
             <span className="flex text-yellow-400 items-center gap-0 font-bold text-lg">

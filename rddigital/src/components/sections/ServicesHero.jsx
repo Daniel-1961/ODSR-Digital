@@ -60,7 +60,7 @@ export default function ServicesHero() {
             Case Studies
           </Link>
           <div className="flex items-center sm:justify-center gap-2 text-black/90 hidden lg:flex ml-2">
-            <img loading="lazy" src="/images/google.webp" alt="Google icon" className="h-[2.5rem] w-auto" />
+            <img loading="lazy" src="/assets/images/google.webp" alt="Google icon" className="h-[2.5rem] w-auto" />
             <span className="flex flex-col items-start gap-[1px]">
               <span className="font-bold text-[10px] lg:text-[11px] text-current/90 leading-none">Google Rating</span>
               <span className="flex text-dark-orange items-center gap-0 font-bold text-base lg:text-lg text-[#F59E0B] leading-none">
