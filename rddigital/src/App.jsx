@@ -13,7 +13,6 @@ import Blog from './pages/Blog';
 import Contact from './pages/Contact';
 import AIPoweredWorkflows from './pages/AIPoweredWorkflows';
 import CustomerAcquisitionJourneys from './pages/CustomerAcquisitionJourneys';
-
 export default function App() {
   return (
     <BrowserRouter>
